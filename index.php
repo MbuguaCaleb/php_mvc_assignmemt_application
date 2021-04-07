@@ -1,5 +1,5 @@
 <?php
-
+//This is a controller
 require('model/database.php');
 require('model/assignments_db.php');
 require('model/course_db.php');
@@ -26,6 +26,8 @@ if (!$action) {
 }
 
 switch ($action) {
+
+        //lists all assignments
     default:
         $course_name = get_course_name($course_id);
         $courses = get_courses();
